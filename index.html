@@ -329,7 +329,7 @@
 
   <!-- Translate button -->
   <div class="translate-btn-bar">
-    <button class="translate-btn" id="translateBtn" onclick="translate()">
+    <button class="translate-btn" id="translateBtn" onclick="runTranslation()">
       <div class="btn-spinner"></div>
       <span class="btn-label">Translate</span>
     </button>
@@ -393,7 +393,7 @@
       if (e.key === 'Enter' && (e.metaKey || e.ctrlKey)) translate();
     }
 
-    async function translate() {
+    async function runTranslation() {
       const input = document.getElementById('inputText').value.trim();
       const btn   = document.getElementById('translateBtn');
       const out   = document.getElementById('outputText');
